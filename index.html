@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>齊家飯糰|新北三重 古早味飯糰</title>
+<meta name="description" content="齊家飯糰,新北市三重區永安北路二段45號,水流公市場旁。古早味飯糰,白米、紫米、混米可選,週二至週日早上營業,可線上點餐自取。">
+<meta name="theme-color" content="#1f4d3a">
+<meta property="og:title" content="齊家飯糰|新北三重 古早味飯糰">
+<meta property="og:description" content="水流公市場旁的古早味飯糰,週二至週日早上營業,可線上點餐自取。">
+<meta property="og:type" content="restaurant">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍙%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "齊家飯糰",
+  "servesCuisine": "飯糰",
+  "telephone": "+886-961-210-157",
+  "priceRange": "$",
+  "paymentAccepted": "Cash",
+  "acceptsReservations": false,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "仁華里永安北路二段45號",
+    "addressLocality": "三重區",
+    "addressRegion": "新北市",
+    "postalCode": "241",
+    "addressCountry": "TW"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "06:30", "closes": "12:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "06:50", "closes": "12:30"}
+  ],
+  "hasMenu": "https://order.quickclick.cc/tw/food/P_9B4l7rXOd"
+}
+</script>
+<style>
+  :root {
+    --bg: #f7f2e8; --card: #fffdf8; --ink: #1d2a24; --muted: #66706a;
+    --brand: #1f4d3a; --accent: #c8862a; --line: #e6dfd0;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    font-size: 17px; line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 0 18px 48px; }
+  header { text-align: center; padding: 48px 0 28px; }
+  .logo { font-size: 56px; line-height: 1; }
+  h1 { font-size: 36px; margin: 12px 0 4px; letter-spacing: .12em; }
+  .tagline { color: var(--muted); margin: 0; }
+  .status { display: inline-block; margin-top: 16px; padding: 6px 14px; border-radius: 999px;
+    font-size: 15px; font-weight: 600; background: #e6efe9; color: var(--brand); }
+  .status.closed { background: #f3e6e2; color: #9b3b2c; }
+  .cta { display: block; text-align: center; text-decoration: none; background: var(--brand); color: #fff;
+    font-weight: 700; font-size: 19px; padding: 16px; border-radius: 14px; margin: 8px 0 12px; }
+  .cta-sub { text-align: center; font-size: 14px; color: var(--muted); margin: 0 0 28px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 14px; margin-bottom: 16px; }
+  h2 { font-size: 15px; color: var(--accent); margin: 0 0 10px; letter-spacing: .08em; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 8px 0; border-top: 1px solid var(--line); }
+  tr:first-child td { border-top: 0; }
+  td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.today td { font-weight: 700; color: var(--brand); }
+  tr.off td:last-child { color: #9b3b2c; }
+  .row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .row:first-of-type { border-top: 0; }
+  .row a { color: var(--brand); font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 6px; }
+  .chip { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 15px; }
+  .note { font-size: 14px; color: var(--muted); margin: 6px 0 4px; }
+  footer { text-align: center; font-size: 13px; color: var(--muted); padding-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true">🍙</div>
+    <h1>齊家飯糰</h1>
+    <p class="tagline">三重水流公市場旁・古早味飯糰</p>
+    <div class="status" id="status" hidden></div>
+  </header>
+
+  <a class="cta" href="https://order.quickclick.cc/tw/food/P_9B4l7rXOd" rel="noopener">線上點餐・到店自取</a>
+  <p class="cta-sub">先點好再來拿,不用排隊</p>
+
+  <section>
+    <h2>營業時間</h2>
+    <table id="hours">
+      <tr data-d="2"><td>週二</td><td>06:30 – 12:30</td></tr>
+      <tr data-d="3"><td>週三</td><td>06:30 – 12:30</td></tr>
+      <tr data-d="4"><td>週四</td><td>06:30 – 12:30</td></tr>
+      <tr data-d="5"><td>週五</td><td>06:30 – 12:30</td></tr>
+      <tr data-d="6"><td>週六</td><td>06:50 – 12:30</td></tr>
+      <tr data-d="0"><td>週日</td><td>06:50 – 12:30</td></tr>
+      <tr data-d="1" class="off"><td>週一</td><td>公休</td></tr>
+    </table>
+    <p class="note">臨時休假會公告在 Google 地圖上。</p>
+  </section>
+
+  <section>
+    <h2>飯糰</h2>
+    <div class="chips"><span class="chip">白米</span><span class="chip">紫米</span><span class="chip">混米</span></div>
+    <p class="note">完整菜單與價格請看<a href="https://order.quickclick.cc/tw/food/P_9B4l7rXOd" rel="noopener">線上點餐頁</a>。</p>
+  </section>
+
+  <section>
+    <h2>店家資訊</h2>
+    <div class="row"><span>新北市三重區永安北路二段45號</span><a href="https://www.google.com/maps/search/?api=1&query=%E9%BD%8A%E5%AE%B6%E9%A3%AF%E7%B3%B0+%E6%96%B0%E5%8C%97%E5%B8%82%E4%B8%89%E9%87%8D%E5%8D%80%E6%B0%B8%E5%AE%89%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B545%E8%99%9F" rel="noopener">地圖</a></div>
+    <div class="row"><span>0961-210-157</span><a href="tel:0961210157">撥打</a></div>
+    <div class="row"><span>付款方式</span><span>只收現金</span></div>
+  </section>
+
+  <footer>© 齊家飯糰</footer>
+</div>
+<script>
+(function () {
+  // 以台灣時間計算今天與目前是否營業
+  var now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Taipei' }));
+  var d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+  var row = document.querySelector('#hours tr[data-d="' + d + '"]');
+  if (row) row.classList.add('today');
+  var open = d === 1 ? null : (d === 0 || d === 6 ? 6 * 60 + 50 : 6 * 60 + 30);
+  var close = 12 * 60 + 30;
+  var el = document.getElementById('status');
+  var isOpen = open !== null && m >= open && m < close;
+  el.textContent = isOpen ? '營業中・12:30 打烊' : (d === 1 ? '今天公休' : (m < (open || 0) ? '今天 ' + (d === 0 || d === 6 ? '06:50' : '06:30') + ' 開門' : '今天已打烊'));
+  el.classList.toggle('closed', !isOpen);
+  el.hidden = false;
+})();
+</script>
+</body>
+</html>
